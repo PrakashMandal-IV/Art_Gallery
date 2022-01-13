@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.icon{
+    width: 70px;
+    height: auto;
+}
+nav{
+border: 2px solid none ;
+gap: 20px;
+background-image: linear-gradient( to right,black, rgb(106, 154, 216));
+width: 100%;
+}
+nav>h1{
+    position: absolute;
+    left: 75px;
+    top: -5px;
+    color: white;
+    margin-bottom: 0;
+    font-size: 33px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+form.search{
+    display: flex;  
+    padding-bottom: 5px;
+    width: 100%;
+   margin-top: -25px;
+    gap: 10px;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: end;
+}
+ .search.box{
+    border: 2px solid white;
+    border-radius: 6px;
+    border-top: 20px;
+    padding: 10px;
+}
+.search.button{
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(188, 200, 241);
+}
+.search.button:hover{
+    background-color: rgb(143, 159, 212) ;
+} 
+ul.elements{
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    color: white;
+    list-style: none;
+    top: 0;
+    margin-top: 70px;
+    padding-left: 10px;
+}
+.elements>li{
+    border: 2px solid none;
+    
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-family: 'Oswald';
+    font-display: swap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .3s ;
+    }
+.elements>li:hover{
+    background-color: rgba(37, 157, 179,.6);
+    
+}
+span{
+    display: none;
+}
+.closeb{
+    display: none;
+}
+.spacer{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 950px) {
+      ul.elements{
+        position: fixed;
+        flex-direction: column;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        margin-top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.2s;
+        padding-top: 60px;  
+        padding-left: 0; 
+    }   
+    .closeb{
+        display: inline;
+    }
+    span{
+        position: absolute;
+        display: block;
+        color: white;
+        left: 10px;
+        top: 60px;
+        width: 3fr;
+    }
+}
