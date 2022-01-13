@@ -1,0 +1,39 @@
+
+ .container{
+    position: absolute;
+    border: 2px solid none;
+    border-radius: 6px;
+    width: 90%;
+    box-shadow:10px 25px 30px rgba(0,0,0,0.3) ;
+    overflow: hidden;
+    right: 5%;
+    height: 50%; 
+}
+
+.image-box{
+  display: flex;
+  width: 400%;
+  justify-content: space-between;
+}
+.image-box{
+  animation: imgBox 50s infinite;
+}
+@keyframes imgBox{
+  0%{
+    margin-left: 0;
+  }
+  50%{
+    margin-left: -300%;
+  }
+  
+}
+
+.image-box .image{
+  width: 100%;
+  height: 100%;
+}
+.image-box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
