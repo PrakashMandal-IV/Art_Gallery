@@ -1,0 +1,11 @@
+.landscape{
+    position: absolute;
+    border: 2px solid none;
+    box-shadow: 5px 5px 5px 5px rgb(255, 255, 255);
+    opacity: 0.3;
+    width: 100%;
+    height: 20%;
+    top: 45%;
+    overflow-x: scroll;
+    display: flex;
+}
