@@ -12,15 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@200&family=Shizuru&display=swap" rel="stylesheet">
 
 <body>
-    <script>
-        function openbar() {
-          document.getElementById("sidebar").style.width = "150px";
-        }
-        
-        function closebar() {
-          document.getElementById("sidebar").style.width = "0";
-        }
-    </script>
+    
     <nav>
         <img src="AG.png" alt="Icon" class="icon">
         <h1>Art Gallery</h1>
@@ -39,15 +31,20 @@
                  <li class="closeb" style="cursor:pointer"onclick="closebar()">Close</li> 
              </ul>
     </nav>  
-     <div class="container">
-        <div class="image-box">
-           
-            <img src="prew/snow_beaity.jpg" alt="" class="image">
-            <img src="prew/couple.jpg" alt="" class="image">
-            <img src="prew/horizon_sample.jpg" alt="" class="image">
-            <img src="prew/ripples.jpg" alt="" class="image">
-         </div>
-        </div>
+    <div class="container">
+      <div class="slidebar left" id="left">
+          <button id="leftbtn" onclick="left()">&gt;</button>
       </div>
+  <img src="prew/snow_beauty.jpg" alt="" class="image" id="slider">    
+      <div class="slidebar" id="right">
+          <button id="rightbtn" onclick="right()">&lt;</button>
+      </div>  
+      
+  </div>
+
+  
+  
+
+  <script src="script.js"></script>
 </body>
 </html>

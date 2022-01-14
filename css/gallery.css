@@ -1,50 +1,59 @@
-
- .container{
-    position: absolute;
-    border: 2px solid none;
-    border-radius: 6px;
-    width: 60%;
-    box-shadow:10px 25px 30px rgba(0,0,0,0.3) ;
-    overflow: hidden;
-    height: 40%;
-    left: 20%;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.image-box{
-  display: flex;
-  width: 400%;
-  justify-content: space-between;
-}
-.image-box{
-  animation: slide 50s infinite;
-}
-@keyframes slide{
-  0%{
-    margin-left: 0;
-  }
-  50%{
-    margin-left: -300%;
-  }
-  
-}
-
-.image-box .image{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-            x   
-.image-box img{
-  height: auto;
-  width: auto;
-  object-fit: cover;
+.container{
+  position: absolute;
+  border: 2px solid none;
+  border-radius: 6px;
+  width: 50%;
+  height: 30%;
+  left: 25%;
+  right: 25%;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
-
-@media screen and (max-width: 950px){
-    .container{
-        height: auto;
-        max-height: 300px;
-    }
+.image{
+  width: 100%;
+  height: 100%;
+  border: 2px solid none;
+  border-radius: 7px;
+  object-fit: contain;    
+}
+.slidebar{
+  border: 2px solid none;
+  background-color: grey;
+  opacity: 0 ;
+  z-index: 1;
+  width: 40%;
+  height: 100%;
+  position: absolute;
+}
+#right{
+  right: 0;
+  top: 0;
+}
+#leftbtn, #rightbtn{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+h3{
+  position: absolute;
+   top: 45%;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   color: white;
+   font-weight: bold;
+   font-stretch: expanded;
+}
+@media  screen and (max-width: 950px) {
+  .container{
+    width: 80%;
+    right: 10%;
+    left: 10%;
+  }
 }
