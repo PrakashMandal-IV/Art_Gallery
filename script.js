@@ -16,13 +16,11 @@ function nextimg(){
     i=i % images.length;
     return images[i];
 }
-
-
 function right(){
     let btn=document.getElementById(rightbtn);
-    document.getElementById("slider").src=nextimg();
+    document.getElementById("bgimg").style.backgroundImage="url("+nextimg()+")";
 }
 function left(){
     let btn=document.getElementById(leftbtn);
-    document.getElementById("slider").src=nextimg();
+    document.getElementById("bgimg").style.backgroundImage="url("+nextimg()+")";
 }

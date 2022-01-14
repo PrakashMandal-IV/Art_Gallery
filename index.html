@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,37 +10,50 @@
 <link rel="icon" href="AG.png">
 <link rel="stylesheet" href="css/nav.css">
 <link rel="stylesheet" href="css/gallery.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@200&family=Shizuru&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/body.css">
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@200&family=Shizuru&display=swap"
+    rel="stylesheet">
 
 <body>
-    
+
     <nav>
         <img src="AG.png" alt="Icon" class="icon">
         <h1>Art Gallery</h1>
-             <form action="" class="search">
+        <form action="" class="search">
             <input type="text" name="search" id="search" placeholder="Search..." class="search box">
             <input type="button" value="Search" class="search button">
             <h6 class="spacer">SPCAER</h6>
-             </form>
-             <span style="font-size:30px;cursor:pointer" onclick="openbar()">&#9776;</span>
-             <ul class="elements" id="sidebar">
-                 <li>Home</li>
-                 <li>Exclusive</li>
-                 <li>Refrences</li>
-                 <li>loyalty free</li>
-                 <li>Login</li>
-                 <li class="closeb" style="cursor:pointer"onclick="closebar()">Close</li> 
-             </ul>
-    </nav>  
+        </form>
+        <span style="font-size:30px;cursor:pointer" onclick="openbar()">&#9776;</span>
+        <ul class="elements" id="sidebar">
+            <li>Home</li>
+            <li>Exclusive</li>
+            <li>Refrences</li>
+            <li>loyalty free</li>
+            <li>Login</li>
+            <li class="closeb" style="cursor:pointer" onclick="closebar()">Close</li>
+        </ul>
+    </nav>
+    <!-- Slider -->
     <div class="container">
-      <div class="slidebar left" id="left">
-          <button id="leftbtn" onclick="left()">&gt;</button>
-      </div>
-  <img src="prew/snow_beauty.jpg" alt="" class="image" id="slider">    
-      <div class="slidebar" id="right">
-          <button id="rightbtn" onclick="right()">&lt;</button>
-      </div>     
-  </div>
-  <script src="script.js"></script>
+        <div class="slidebar left" id="left">
+            <button id="leftbtn" onclick="left()"></button>
+        </div>
+        <div class="bg" id="bgimg" style="background-image: url(prew/snow_beauty.jpg);">
+        <img src="prew/snow_beauty.jpg" alt="" class="image" id="slider" >
+        </div>
+        <div class="slidebar" id="right">
+            <button id="rightbtn" onclick="right()"></button>
+        </div>
+    </div>
+    <!-- Body -->
+   <div class="landscape">
+      <img src="" alt="">
+   </div>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
