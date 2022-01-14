@@ -121,4 +121,10 @@ span{
         top: 60px;
         width: 3fr;
     }
+    form.search{
+        justify-content: start;
+        align-items: flex-start;
+        text-align: start;
+        padding-left: 50px;
+    }
 }
